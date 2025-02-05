@@ -21,7 +21,7 @@ namespace HastaneProje
         private void RandevuListesi_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * Table_Randevular",sqlbaglantisi.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select *  from Table_Randevular",sqlbaglantisi.baglanti());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             

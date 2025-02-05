@@ -20,7 +20,7 @@ namespace HastaneProje
         private void Duyurular_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * Tbl_Duyurular",sqlbaglantisi.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * from  Tbl_Duyurular",sqlbaglantisi.baglanti());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
